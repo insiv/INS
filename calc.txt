@@ -1,0 +1,22 @@
+print("Для завершения 0 в качестве знака операции")
+
+while True:
+    s = input("Знак ( +, -, *,  /): ")
+    if s ==  '0' :
+        break
+    if s not in   ('+', '-', '*', '/') :
+        continue
+    a = int(input("Введите первое значение: "))
+    b = int(input("Введите второе значение: "))
+
+    if s == '+':
+        print(a +  b)
+    elif s == '-':
+        print(a - b)
+    elif s == '*':
+        print(a * b)
+    elif s == '/':
+        if b != 0:
+            print(a / b)
+        else:
+           print("Делить на ноль нельзя")
